@@ -1,13 +1,3 @@
-"""Tests harness for distutils.versionpredicate.
-
-"""
-
-import distutils.versionpredicate
-import doctest
-from test.support import run_unittest
-
-def test_suite():
-    return doctest.DocTestSuite(distutils.versionpredicate)
-
-if __name__ == '__main__':
-    run_unittest(test_suite())
+version https://git-lfs.github.com/spec/v1
+oid sha256:690003c23752f77c7ea1108cd51dd7e9b0ca7021ad925aa982bae5bcd2f988b0
+size 280

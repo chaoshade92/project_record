@@ -1,32 +1,3 @@
-"Test autocomplete_w, coverage 11%."
-
-import unittest
-from test.support import requires
-from tkinter import Tk, Text
-
-import idlelib.autocomplete_w as acw
-
-
-class AutoCompleteWindowTest(unittest.TestCase):
-
-    @classmethod
-    def setUpClass(cls):
-        requires('gui')
-        cls.root = Tk()
-        cls.root.withdraw()
-        cls.text = Text(cls.root)
-        cls.acw = acw.AutoCompleteWindow(cls.text)
-
-    @classmethod
-    def tearDownClass(cls):
-        del cls.text, cls.acw
-        cls.root.update_idletasks()
-        cls.root.destroy()
-        del cls.root
-
-    def test_init(self):
-        self.assertEqual(self.acw.widget, self.text)
-
-
-if __name__ == '__main__':
-    unittest.main(verbosity=2)
+version https://git-lfs.github.com/spec/v1
+oid sha256:30ab335b5312af5ca57b26945c7297bec89f31e90d70e7c8cb0a2283599ab40f
+size 709
